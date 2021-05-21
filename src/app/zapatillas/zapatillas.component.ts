@@ -15,6 +15,9 @@ export class ZapatillasComponent implements OnInit {
   //creamos lun array de la propiedad objetozapatillas
   public zapatillas: Array<objetozapatillas>;
   //constructor objetozapatillas
+  public mi_marca: String;
+  //array de marcas
+public marcas:String[];
   constructor() {
     //inicializamos en el constructor la propiedad zapatilla
     this.zapatillas = [
@@ -22,10 +25,23 @@ export class ZapatillasComponent implements OnInit {
       new objetozapatillas('Rebook Classic', 'Reebok', 'blanca', 80, true),
       new objetozapatillas('Rebook GOLD', 'Reebok', 'blanca', 800, true)
     ];
+    //inicializon del nuevo array marcas
+this.marcas=new Array();
+    this.mi_marca="oscar"
   }
 
   ngOnInit(){
     console.log(this.zapatillas);
+  }
+
+  getmarca(){
+    alert(this.mi_marca);
+  }
+
+  addmarca(){
+// aqui agregamos una nueva marca al array a diferencia de js
+this.marcas.push(this.mi_marca)
+
   }
 
 }

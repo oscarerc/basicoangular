@@ -10,3 +10,22 @@
     </li>
     <li>ADIDAS</li>
 </ul>
+    <!-- MARCAS -->
+<H3>añadir marca</H3>
+<!-- utilizamos la directiva ngModel con el fin de cambiar poporpiedades de manera reactivca -->
+<p>
+<input type="text" [(ngModel)]="mi_marca"/>
+<button (click)="getmarca()">mostrar marca</button>
+<button (click)="addmarca()">añadir marca</button>
+</p>
+
+<h3>TODAS LAS MARCAS</h3>
+<ul>
+    <li *ngFor="let marcauni of marcas; let indice=index">{{indice+" "+marcauni}}</li>
+</ul>
+
+
+<p>{{mi_marca}}</p>
+<!-- <p>`${mimarca}`</p> -->
+
+
