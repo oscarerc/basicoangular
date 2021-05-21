@@ -1,0 +1,12 @@
+<H1>{{titulo}}</H1>
+
+<p>zapatillas works!</p>
+
+<ul>
+    <!-- EN EL SIGUIENTE UTILIZAMOS EL FOR EN ANGULAR CREANDO UNA VARIABLE EN CADA ITERACCION DEL CLASE U OBJETO objetozapatilla -->
+    <!-- LOS NG CONDICIONALES SON SENSIBLES A MAYUSCULAS -->
+    <li *ngFor="let zapatos of zapatillas">
+        {{zapatos.nombre}}
+    </li>
+    <li>ADIDAS</li>
+</ul>
