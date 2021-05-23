@@ -7,6 +7,15 @@
     <!-- LOS NG CONDICIONALES SON SENSIBLES A MAYUSCULAS -->
     <li *ngFor="let zapatos of zapatillas">
         {{zapatos.nombre}}
+        
+        <!-- con ngClass podemos poner una clase a un atributo de acuerdo a una condicion -->
+        <strong [class.altoprecio]="zapatos.precio>20">
+            {{zapatos.precio}}
+            <!-- ng class se pueden implementar diferenctres clases
+            esto se púede logrqar con el fin de implementar distins ejemplo: -->
+            <!-- [ngClass]="{'fondorojo','fondoblanco'}"> -->
+        </strong>
+
     </li>
     <li>ADIDAS</li>
 </ul>

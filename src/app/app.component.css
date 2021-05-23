@@ -1,0 +1,13 @@
+.rutas{
+ display: flex;
+ flex-direction: row;
+}
+
+.rutas a{
+    padding: 5px;
+}
+.active{
+    /* background: red; */
+    text-decoration: none;
+    font-size: 20px;
+}

@@ -1,9 +1,28 @@
+<DIV>MI PRIMER ANGULAR</DIV> 
 
-<DIV>MI PRIMER ANGULAR</DIV>
-
-<zapatillas></zapatillas>
 <!-- SELECTRORES -->
+<!-- <zapatillas></zapatillas> -->
 <!-- <videojuego></videojuego>
 <cursos></cursos> -->
+
+<div class="rutas">
+<!-- RouterLink es un enlace para direccionar de modo singlepageaplication -->
+    <a [routerLink]="['/home']" routerLinkActive="active">Inicio</a>
+    <a [routerLink]="['/cursos']" routerLinkActive="active">cursos</a>
+    <a [routerLink]="['/zapatillas']" routerLinkActive="active">zapatillas</a>
+
+</div>
+<!-- //etiqueta quie pone el componente activo -->
+
+<!-- BOTONES DE REDIRECCION -->
+<div class="botones">
+    <button (click)="onclick('/home')">inicion</button>
+    <button (click)="onclick('/cursos')">Tus crusos</button>
+    <button (click)="onclick('/zapatillas')">Tus zapatillas</button>
+</div>
+
+
+
+<router-outlet></router-outlet>
 
 
